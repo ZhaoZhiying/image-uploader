@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.uploader{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 100px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.uploader__img{
+    width: 100%;
+    height: 100%;
+}
+.uploader__input{
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    background: #fff;
+    opacity: 0; 
+}
+.uploader__edit{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;   
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: none;
+    pointer-events: none;
+}
+.uploader:hover .uploader__edit{
+    display: flex;
+}
